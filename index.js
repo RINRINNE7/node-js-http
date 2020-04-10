@@ -12,7 +12,7 @@ const sever = http.createServer((req, res) => {
       if (req.url === '/enquetes/yaki-shabu') {
         res.write(pug.renderFile('./form.pug', {
           path: req.url,
-          firstItem: '焼き肉',
+          firstItem: 'すき焼き',
           secondItem: 'しゃぶしゃぶ'
         }));
       } else if (req.url === '/enquetes/rice-bread') {
